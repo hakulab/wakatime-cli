@@ -242,7 +242,7 @@ jobs:
         name: Checkout
         uses: actions/checkout@v4
       -
-        uses: hakula139/devkit/.github/actions/setup-nix@v3
+        uses: hakulab/devkit/.github/actions/setup-nix@v3
       -
         name: Check package
         run: nix flake check --print-build-logs
@@ -279,7 +279,7 @@ jobs:
         run: test "$RESULT" = success
       -
         name: Check results
-        uses: hakula139/devkit/.github/actions/ci-result@v3
+        uses: hakulab/devkit/.github/actions/ci-result@v3
 
   version:
     name: Version
